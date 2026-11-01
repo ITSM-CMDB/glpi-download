@@ -1,0 +1,7 @@
+Product: GLPI
+Version: 12.0.1
+Category: ITSM / CMDB
+Archive: glpi-12.0.1-original.tgz
+Archive size: 113412425 bytes
+SHA-256: BF89A1BE40EA76E4E7A6A5CEA8FD24C9D822FAB83E4E90519FF0C8D062F13291
+Delivery: ITSM-CMDB GitHub Release
