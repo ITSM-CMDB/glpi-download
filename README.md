@@ -4,7 +4,7 @@
 
 **A web-based IT service management and asset management package for help desk workflows, users, equipment, and IT assets.**
 
-[![Download](https://img.shields.io/badge/DOWNLOAD-GLPI%20ORIGINAL%20ARCHIVE-16A34A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ITSM-CMDB/glpi-download/releases/latest/download/glpi-12.0.1-original.tgz)
+[![Download ZIP](https://img.shields.io/badge/DOWNLOAD-GLPI%20ZIP-16A34A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ITSM-CMDB/glpi-download/releases/latest/download/glpi-12.0.1-original.zip)
 
 </div>
 
@@ -25,17 +25,19 @@ knowledge management, and operational reporting.
 - IT service management and help desk components
 - CMDB and IT asset management components
 - Included license and project documentation
+- ZIP archive for convenient Windows extraction
+- Original TGZ archive for Unix-like environments
 
 ## Quick start
 
 GLPI runs as a PHP web application and requires a supported web server, PHP,
-and database. Extract the archive into the document root of your authorized
-deployment, then open the GLPI URL in a browser to complete setup.
+and database. Extract the ZIP or TGZ archive into the document root of your
+authorized deployment, then open the GLPI URL in a browser to complete setup.
 
 ```powershell
-$archive = ".\glpi-12.0.1-original.tgz"
-Invoke-WebRequest "https://github.com/ITSM-CMDB/glpi-download/releases/latest/download/glpi-12.0.1-original.tgz" -OutFile $archive
-tar -xzf $archive
+$archive = ".\glpi-12.0.1-original.zip"
+Invoke-WebRequest "https://github.com/ITSM-CMDB/glpi-download/releases/latest/download/glpi-12.0.1-original.zip" -OutFile $archive
+Expand-Archive $archive -DestinationPath .
 ```
 
 After extraction, follow the installer in your authorized web environment.
